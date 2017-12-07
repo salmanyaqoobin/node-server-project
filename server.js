@@ -57,6 +57,11 @@ app.get('/about', (req, res)=>{
    res.render('about', pageOptions)
 });
 
+app.get('/projects', (req, res)=>{
+    var pageOptions = {title:'Projects Page', heading:"Projects Page", body:"Welcome to Projects page"};
+    res.render('projects', pageOptions)
+});
+
 app.get('/bad', (req, res)=>{
     res.send({errorMessage:'Bad Request'});
 });
